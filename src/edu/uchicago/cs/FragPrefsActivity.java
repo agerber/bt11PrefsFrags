@@ -14,22 +14,10 @@ public class FragPrefsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Display the fragment as the main content.
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new PrefsFragment()).commit();
+
     }
 
 
-    //this is a private inner class. You must use fragments for your preferences. 
-    public static class PrefsFragment extends PreferenceFragment {
 
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-
-            // Load the preferences from an XML resource
-            addPreferencesFromResource(R.xml.preferences);
-        }
-    }
 
 }
